@@ -1,6 +1,6 @@
 //2016 07 25
 //by aaron montoya-moraga
-//avatar for posternura's github
+//avatar for bandurria's github
 //made for processing 3.1
 
 void setup() {
@@ -19,7 +19,7 @@ void setup() {
   }
   
   //save the frame
-  saveFrame("avatar.png");
+  saveFrame("avatar_bandurria.png");
 }
 
 void leftToRight() {
@@ -34,7 +34,7 @@ void leftToRight() {
     //set width line
     strokeWeight(lineWidth);
     //random color
-    stroke(random(255), random(100), random(200), random(255));
+    stroke(random(50), random(255), random(50), 100+random(100));
     //horizontal line
     line(0, j, width, j+angle*width);
     //update counter
@@ -54,7 +54,7 @@ void rightToLeft() {
     //set width line
     strokeWeight(lineWidth);
     //random color
-    stroke(random(255), random(100), random(200), random(255));
+    stroke(random(50), random(255), random(50), 100+random(100));
     //horizontal line
     line(0, j+angle*width, width, j);
     //update counter
